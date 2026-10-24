@@ -1,0 +1,18 @@
+.pix-section{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  border:1px solid #8ad8b2;
+  background:radial-gradient(ellipse at 100% 0%,#d9f8e8 0,transparent 42%),linear-gradient(120deg,#fff 8%,#f2fbf5 100%);
+  box-shadow:0 14px 34px rgba(19,105,66,.13),0 0 0 4px rgba(43,164,107,.07);
+}
+.pix-section::before{content:"";position:absolute;z-index:-1;inset:0 auto 0 0;width:7px;background:linear-gradient(180deg,#f5cf41 0 28%,#25a56b 28% 100%)}
+.pix-badge{box-shadow:0 5px 14px rgba(22,142,104,.22);font-size:15px;min-width:48px;text-align:center}
+.pix-copy h2{font-size:20px;letter-spacing:-.3px;color:#103d2d}
+.pix-copy p{font-size:13px;color:#456d5a}
+.pix-key{border-color:#acd7bd;box-shadow:inset 0 1px 3px rgba(20,60,40,.04);font-size:13px}
+.copy-pix{box-shadow:0 5px 12px rgba(22,142,104,.2);transition:transform .18s ease,box-shadow .18s ease}
+.copy-pix:hover{transform:translateY(-2px);box-shadow:0 8px 16px rgba(22,142,104,.25)}
+.copy-pix:focus-visible{outline:3px solid #f1c94a;outline-offset:3px}
+@media(max-width:800px){.pix-section{box-shadow:0 9px 22px rgba(19,105,66,.12),0 0 0 3px rgba(43,164,107,.06)}.pix-copy h2{font-size:18px}.pix-key{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.copy-pix{transition:none}}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de privacidade da simulação Voto 2026.">
+  <link rel="icon" type="image/png" href="assets/votocerto.png">
+  <link rel="apple-touch-icon" href="assets/votocerto.png">
+  <title>Política de Privacidade · Voto 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="privacy.css">
+</head>
+<body class="privacy-page">
+  <header class="privacy-header"><div class="privacy-wrap"><a class="privacy-brand" href="index.html"><span>V</span> Voto 2026</a><a class="privacy-back" href="index.html">← Voltar à simulação</a></div></header>
+  <main class="privacy-wrap privacy-main">
+    <article class="privacy-card">
+      <span class="privacy-kicker">TRANSPARÊNCIA E DADOS</span>
+      <h1>Política de Privacidade</h1>
+      <p class="privacy-lead">Sua privacidade é importante. Esta página explica quais informações são utilizadas pela Urna Simulada, para que servem e como são tratadas.</p>
+      <p>A plataforma oferece uma experiência interativa e recreativa sobre o segundo turno das eleições de 2026. Não constitui pesquisa eleitoral e não possui registro no Tribunal Superior Eleitoral (TSE).</p>
+
+      <h2>Informações utilizadas na votação</h2>
+      <ul>
+        <li><strong>Voto e estado opcional:</strong> quando a participação é enviada ao servidor, a opção escolhida e o estado informado (se houver) são armazenados juntos para compor os totais e a distribuição por estado. Não solicitamos nome, e-mail, telefone ou CPF no formulário.</li>
+        <li><strong>Identificador do navegador:</strong> ao enviar uma participação, a página gera um código aleatório e o guarda no armazenamento local deste navegador. O servidor transforma o código com uma chave secreta (HMAC) e guarda o resultado em uma tabela separada dos votos. Esse registro não expira automaticamente e serve para impedir um segundo envio com o mesmo identificador. O código transformado é pseudonimizado, não deve ser considerado anônimo e não é uma identificação confiável do aparelho físico.</li>
+        <li><strong>Registros demonstrativos:</strong> a base pode incluir votos simulados, identificados internamente como demonstração. A interface informa quando os números são demonstrativos; eles não representam votos enviados por visitantes nem o eleitorado.</li>
+      </ul>
+      <p>O controle é por navegador/perfil, não por endereço IP nem por hardware. Apagar os dados do site, usar outro navegador ou criar outro perfil pode gerar um identificador diferente e permitir novo envio; por isso, não é possível garantir tecnicamente uma participação por pessoa ou por aparelho físico. O código da função de votação não usa o endereço IP para bloquear participações, embora provedores de hospedagem possam manter registros técnicos próprios. A urna também pode ser usada localmente em modo de demonstração; nesse modo, as escolhas ficam apenas na memória da página e não são enviadas ao banco.</p>
+
+      <h2>Informação opcional sobre o estado</h2>
+      <p>Você pode deixar o campo de estado sem preenchimento. Se informar um estado, essa informação é armazenada junto à opção de voto no registro da participação para permitir a apresentação de totais por UF. Como o registro individual contém a opção e o estado, não afirmamos que esses dois campos estejam tecnicamente separados.</p>
+
+      <h2>Linha do tempo pública opcional</h2>
+      <p>Antes de confirmar, você pode autorizar a publicação da opção escolhida, da UF informada (se houver) e do horário aproximado, com precisão de minuto. A autorização fica desmarcada por padrão e não é necessária para votar. A lista apresenta até 20 participações autorizadas nas últimas 24 horas, incluindo brancos e nulos, sem nome, IP ou identificador de navegador. Registros anteriores sem autorização e registros demonstrativos não são publicados nessa lista.</p>
+      <p>Esses detalhes se tornam públicos quando você autoriza e podem ser vistos ou copiados por visitantes durante a exibição. Não marque a opção se preferir manter sua participação apenas nos totais agregados. A ausência de nome não garante que terceiros sejam incapazes de relacionar uma participação a alguém por informações que já conheçam.</p>
+
+      <h2>Serviços utilizados</h2>
+      <p>O backend usa Supabase para receber, armazenar e consultar as participações. Seu navegador também carrega fontes do Google Fonts, o que estabelece uma conexão com os servidores do Google. Os links para WhatsApp, Instagram e o aplicativo bancário do Pix só são acessados se você escolher abri-los.</p>
+      <p>Esta versão não implementa o cookie <code>urna_voto</code>, identificador persistente em IndexedDB nem Cloudflare Turnstile.</p>
+
+      <h2>Contribuições por Pix</h2>
+      <p>As doações são iniciadas no aplicativo do seu banco usando a chave ou o QR Code exibidos no site. A plataforma não recebe nem armazena dados bancários durante esse procedimento.</p>
+
+      <h2>Seus controles e solicitações</h2>
+      <p>Você pode entrar em contato para pedir informações sobre o tratamento de dados e exercer os direitos aplicáveis previstos na Lei Geral de Proteção de Dados (LGPD). Como os votos são armazenados sem nome ou conta de usuário, não temos um meio confiável de localizar uma participação individual com base na identidade de uma pessoa.</p>
+      <p>O identificador de participação fica no armazenamento local do navegador, não em cookie. Apagar os dados locais pode remover esse identificador e permitir uma nova participação. O limite é aplicado pelo servidor usando o HMAC do identificador descrito acima.</p>
+
+      <h2>Fale conosco</h2>
+      <ul class="privacy-contacts">
+        <li><strong>E-mail:</strong> <a href="mailto:contato.kevenmatheus@gmail.com">contato.kevenmatheus@gmail.com</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/keven.tech/" target="_blank" rel="noopener noreferrer">@keven.tech</a></li>
+        <li><strong>Portfólio:</strong> <a href="https://portfoliokevenmatheus.vercel.app/" target="_blank" rel="noopener noreferrer">Keven Matheus</a></li>
+      </ul>
+      <p class="privacy-updated">Última atualização: outubro de 2026.</p>
+    </article>
+  </main>
+  <footer class="privacy-footer"><div class="privacy-wrap">Simulação independente para fins de entretenimento · <a href="index.html">Voto 2026</a></div></footer>
+</body>
+</html>

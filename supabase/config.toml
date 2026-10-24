@@ -1,0 +1,5 @@
+[functions.submit-vote]
+verify_jwt = false
+
+[functions.results]
+verify_jwt = false
